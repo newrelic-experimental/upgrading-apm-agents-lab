@@ -7,7 +7,7 @@ echo "Running challenge setup script on host docker-vm"
 mkdir labsrc
 cd labsrc
 git init
-git remote add -f origin git@github.com:newrelic-experimental/upgrading-apm-agents-lab.git
+git remote add -f origin https://github.com/newrelic-experimental/upgrading-apm-agents-lab.git
 
 git config core.sparseCheckout true
 

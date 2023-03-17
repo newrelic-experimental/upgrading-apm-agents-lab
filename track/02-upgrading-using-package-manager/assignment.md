@@ -22,7 +22,7 @@ tabs:
 - title: Editor
   type: code
   hostname: docker-vm
-  path: /labsrc/apps
+  path: /root/labsrc/apps
 difficulty: basic
 timelimit: 600
 ---
