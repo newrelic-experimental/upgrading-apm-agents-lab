@@ -1,9 +1,9 @@
 ---
-slug: building-an-image
+slug: upgrading-using-package-manager
 id: omokgpv13tne
 type: challenge
-title: Building a container image
-teaser: Learn how to build an image using a Dockerfile
+title: Upgrading using a package manager
+teaser: Upgrade using nodejs package manager
 notes:
 - type: text
   contents: |
@@ -22,7 +22,7 @@ tabs:
 - title: Editor
   type: code
   hostname: docker-vm
-  path: /app
+  path: /labsrc/apps
 difficulty: basic
 timelimit: 600
 ---
