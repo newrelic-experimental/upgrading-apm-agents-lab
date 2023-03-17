@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  
+  web:
+    build: ./hello-new-relic
+    ports:
+      - "8001:3000"
+    environment:
+      # Add environment variables here
+      NEW_RELIC_APP_NAME: "Hello New Relic"
+  
+  load-generator:
+    image: locustio/locust
+    volumes:
+      - ./loadgen:/mnt/locust
+    command: -f /mnt/locust/locustfile.py -h http://web:8001 -u 3 --headless

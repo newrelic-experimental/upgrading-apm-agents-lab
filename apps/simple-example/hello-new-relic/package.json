@@ -1,0 +1,14 @@
+{
+    "name": "hello_new_relic",
+    "version": "1.0.0",
+    "description": "Simple web app instrumented with New Relic",
+    "author": "First Last <first.last@example.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "newrelic": "9.0.0"
+    }
+  }
