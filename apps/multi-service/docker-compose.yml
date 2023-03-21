@@ -1,0 +1,32 @@
+version: "3.9"
+services:
+  
+  service-a:
+    build: ./service-a
+    ports:
+      - "8011:3000"
+    environment:
+      # Add environment variables here
+      NEW_RELIC_APP_NAME: "Service A"
+
+  service-b:
+    build: ./service-b
+    ports:
+      - "8012:3000"
+    environment:
+      # Add environment variables here
+      NEW_RELIC_APP_NAME: "Service B"
+  
+  service-c:
+    build: ./service-b
+    ports:
+      - "8013:3000"
+    environment:
+      # Add environment variables here
+      NEW_RELIC_APP_NAME: "Service C"
+  
+  load-generator:
+    image: locustio/locust
+    volumes:
+      - ./loadgen:/mnt/locust
+    command: --locustfile /mnt/locust/locustfile.py --users 3 --headless

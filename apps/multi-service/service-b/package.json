@@ -1,0 +1,13 @@
+{
+    "name": "service_b",
+    "version": "1.0.0",
+    "description": "Service B",
+    "author": "First Last <first.last@example.com>",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "common": "file:../../common"
+    }
+  }
