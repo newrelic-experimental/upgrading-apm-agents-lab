@@ -8,6 +8,6 @@
       "start": "node server.js"
     },
     "dependencies": {
-      "common": "file:../../common"
+      "common": "file:../common"
     }
   }

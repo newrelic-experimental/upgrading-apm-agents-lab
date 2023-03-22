@@ -1,5 +1,5 @@
 {
-    "name": "common_dependencies",
+    "name": "common",
     "version": "1.0.0",
     "description": "Shared Dependencies for all of our apps",
     "author": "First Last <first.last@example.com>",
