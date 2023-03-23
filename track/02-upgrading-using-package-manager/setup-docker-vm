@@ -3,14 +3,3 @@ set -euxo pipefail
 
 echo "Running challenge setup script on host docker-vm"
 
-#Set up git repo
-mkdir labsrc
-cd labsrc
-git init
-git remote add -f origin https://github.com/newrelic-experimental/upgrading-apm-agents-lab.git
-
-git config core.sparseCheckout true
-
-echo "apps/" >> .git/info/sparse-checkout
-
-git pull origin main
