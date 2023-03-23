@@ -13,4 +13,4 @@ services:
     image: locustio/locust
     volumes:
       - ./loadgen:/mnt/locust
-    command: --locustfile /mnt/locust/locustfile.py --host http://web:3000 --users 3 --headless
+    command: --locustfile /mnt/locust/locustfile.py --host http://web:3000 --users 3 --headless --only-summary
