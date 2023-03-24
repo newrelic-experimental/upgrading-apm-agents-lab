@@ -22,7 +22,6 @@ tabs:
   type: terminal
   hostname: docker-vm
   workdir: /root/labsrc/apps/simple-example
-
 difficulty: basic
 timelimit: 600
 ---

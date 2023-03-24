@@ -11,14 +11,14 @@ notes:
 
     Now, we'll upgrade the New Relic agent by changing the version in the package manager.
 tabs:
-- title: Terminal
-  type: terminal
-  hostname: docker-vm
-  workdir: /root/labsrc/apps/simple-example
 - title: Source Code Editor
   type: code
   hostname: docker-vm
   path: /root/labsrc/apps/simple-example
+- title: Terminal
+  type: terminal
+  hostname: docker-vm
+  workdir: /root/labsrc/apps/simple-example
 difficulty: basic
 timelimit: 600
 ---
