@@ -1,5 +1,6 @@
 ---
 slug: upgrade-using-a-package-manager
+id: 1doy1mdpuyol
 type: challenge
 title: Upgrade Using a Package Manager
 teaser: Upgrade the New Relic agent using npm
@@ -32,21 +33,36 @@ Open up the `package.json` file in the Source Code Editor.  Each library is spec
 
 You should see that the version of the `newrelic` library matches what Agent Groundskeeper detected.   Replace this version with the one recommended by Agent Groundskeeper.
 
+Remember to save your changes by clicking the icon next to the filename in the tab.
+
 Build
 =====
 Now, build the app by running the following command in the Terminal tab:
 ```
-build.sh
+./build.sh
 ```
 
 Deploy
 ======
 Once the app is done building, deploy it by running the following command in the terminal:
 ```
-deploy.sh
+./deploy.sh
 ```
 
-After a few minutes, return to Agent Groundskeeper to see if the new version is detected. (You may see BOTH versions reporting at first, since the old version was just recently replaced)
+Note:  sometimes resources are not destroyed and re-created in the correct order when redeploying and you may see the following error:
+
+```
+Recreating simple-example_web_1 ... error
+
+ERROR: for simple-example_web_1  Cannot start service web: network simple-example_default not found
+
+ERROR: for web  Cannot start service web: network simple-example_default not found
+ERROR: Encountered errors while bringing up the project.
+```
+
+In that case, just re-run the deploy command and it should work.
+
+After a few minutes, refresh Agent Groundskeeper to see if the new version is detected. (You may see BOTH versions reporting at first, since the old version was just recently replaced)
 
 Takeaways:
 ==========

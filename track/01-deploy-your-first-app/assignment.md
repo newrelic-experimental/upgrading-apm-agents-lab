@@ -11,15 +11,18 @@ notes:
 
     Please wait while all of the resources for the course are created.
     This might be a good time to get your New Relic License Key ready.
+
+    For security purposes, it's recommended that you generate a new licencse key solely for the purpose of this exercise, then delete it when you are done with the course.
 tabs:
-- title: Terminal
-  type: terminal
-  hostname: docker-vm
-  workdir: /root/labsrc/apps/simple-example
 - title: Source Code Editor
   type: code
   hostname: docker-vm
   path: /root/labsrc/apps/simple-example
+- title: Terminal
+  type: terminal
+  hostname: docker-vm
+  workdir: /root/labsrc/apps/simple-example
+
 difficulty: basic
 timelimit: 600
 ---
@@ -42,11 +45,13 @@ Next, open up the `docker-compose.yml` file.  This is the specification for how 
 
 Knowing what you do about using [environment variables](https://docs.newrelic.com/docs/apm/agents/nodejs-agent/installation-configuration/nodejs-agent-configuration/#environment) to configure the agent, use one here to set the license key for the agent.
 
+Remember to save your changes by clicking the icon next to the filename in the tab.
+
 Build
 =====
 Now, build the app by running the following command in the Terminal tab:
 ```
-build.sh
+./build.sh
 ```
 It may take a few minutes the first time your run it as all the dependencies are downloaded.
 

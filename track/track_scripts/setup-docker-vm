@@ -18,16 +18,16 @@ sudo dpkg -i ./newrelic-cli_0.64.2_Linux_x86_64.deb
 sudo mkdir -p /var/tmp/track/config
 sudo mkdir -p /var/tmp/track/apps
 # Create the environment file for the user
-cat <<EOF >> /var/tmp/track/config/env.sh
-export NEW_RELIC_LICENSE_KEY=<your_license_key>
-export NEW_RELIC_API_KEY=<your_api_key>
-EOF
+# cat <<EOF >> /var/tmp/track/config/env.sh
+# export NEW_RELIC_LICENSE_KEY=<your_license_key>
+# export NEW_RELIC_API_KEY=<your_api_key>
+# EOF
 
 # Set the env files in every terminal session
-cat <<EOF >> /root/.bashrc
+# cat <<EOF >> /root/.bashrc
 
-source /var/tmp/track/config/env.sh
-EOF
+# source /var/tmp/track/config/env.sh
+# EOF
 
 #Set up git repo
 mkdir labsrc
