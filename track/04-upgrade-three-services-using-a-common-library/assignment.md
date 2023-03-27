@@ -1,11 +1,16 @@
 ---
 slug: upgrade-three-services-using-a-common-library
+id: 7mlgxpwzzha1
 type: challenge
 title: Upgrade Three Services Using a Common Library
 teaser: Follow some common patterns and best practices to streamline agent upgrades.
 notes:
 - type: text
-  contents: Many organizations will use the intrinsic properties of _transitive dependencies_ to simplify their deployments.  This allows them to standardize on versions of software like web servers and tools like New Relic.  By including a shared library in their code, individual teams are guaranteed to be running approved and/or supported versions of all of their external dependencies.
+  contents: Many organizations will use the intrinsic properties of _transitive dependencies_
+    to simplify their deployments.  This allows them to standardize on versions of
+    software like web servers and tools like New Relic.  By including a shared library
+    in their code, individual teams are guaranteed to be running approved and/or supported
+    versions of all of their external dependencies.
 tabs:
 - title: Source Code Editor
   type: code

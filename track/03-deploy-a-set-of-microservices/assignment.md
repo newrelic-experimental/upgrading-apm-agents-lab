@@ -1,5 +1,6 @@
 ---
 slug: deploy-a-set-of-microservices
+id: afxkpo1kwkji
 type: challenge
 title: Deploy a Set of Microservices
 teaser: Using Docker Compose, we'll deploy several services at once.
@@ -41,7 +42,7 @@ Deploy
 ======
 Once the apps are done building, deploy them by running the following command in the terminal:
 ```
-deploy.sh
+./deploy.sh
 ```
 
 After a few moments, you should see three service in New Relic One named Service A", "Service B", and "Service C"

@@ -58,7 +58,7 @@ Deploy
 ======
 Once the app is done building, deploy it by running the following command in the terminal:
 ```
-deploy.sh
+./deploy.sh
 ```
 
 After a few moments, you should see a service in New Relic One named "Hello New Relic"
