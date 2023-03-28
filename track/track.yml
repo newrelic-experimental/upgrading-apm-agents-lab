@@ -1,15 +1,13 @@
 slug: upgrading-new-relic-apm-agents
 id: mo4qbkiuwqoc
 title: Upgrading New Relic APM Agents
-teaser: Use a virtual machine (VM) as a sandbox host
+teaser: Learn how to upgrade New Relic APM agents under some commonly encountered
+  scentarios
 description: |-
-  This template shows you how to use a Virtual Machine (VM). VMs can be used when you need more compute and memory or for running Docker containers.
-
   **This track demonstrates how to:**
-    - Provision virtual machine sandbox host using a predefined Compute Engine image
-    - Use the Docker daemon on the sandbox host to build and run container images
-    - Add check and solve scripts
-    - Add simple assets (a Dockerfile) to the sandbox host
+    - Upgrade using a package manager (npm)
+    - Upgrade several services using a shared library
+    - Upgrade using a build tool (gradle)
 icon: https://cdn.instruqt.com/assets/templates/docker.png
 tags: []
 owner: newrelic
@@ -19,4 +17,4 @@ lab_config:
   overlay: false
   width: 25
   position: right
-checksum: "11913862299682185623"
+checksum: "8724003269431409232"

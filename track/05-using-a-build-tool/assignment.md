@@ -59,9 +59,11 @@ Take a look in the "Agent Editor" tab again.  You should see the contents of the
 
 Configure the Agent
 ===================
-Since the agent lives separately from our application, we're going to use the traditional method of editing `newrelic.yml` to configure the agent.  We can make this edits without hacing to alter the source code or distribution asset of the application.
+Since the agent lives separately from our application, we're going to use the traditional method of editing `newrelic.yml` to configure the agent.  We can make these edits without having to alter the source code or distribution asset of the application.
 
 Go ahead and edit `newrelic.yml`, adding your license key and application name.
+
+Remember to save your changes in the editor
 
 Run the Application
 ===================
@@ -69,6 +71,10 @@ Start the application by running the following command:
 ```
 ./gradlew bootRun
 ```
+
+Verify
+======
+After a few moments, you should see your new application in New Relic One.
 
 Takeaways
 =========
