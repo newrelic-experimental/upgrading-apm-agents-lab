@@ -10,4 +10,5 @@ echo "This is the setup script"
 
 mkdir -p /tmp/newrelic
 
+
 exit 0

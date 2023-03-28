@@ -1,12 +1,13 @@
 ---
 slug: using-a-build-tool
+id: pyuxa3x8rczc
 type: challenge
 title: Using a Build Tool
 teaser: Use gradle to download and install the New Relic Agent.
 notes:
 - type: text
-  contents: With languages like Java, the New Relic agent is not part of the application itself.  This provides
-    nearly unlimited options to install and configure it.
+  contents: With languages like Java, the New Relic agent is not part of the application
+    itself.  This provides nearly unlimited options to install and configure it.
 tabs:
 - title: Application Editor
   type: code

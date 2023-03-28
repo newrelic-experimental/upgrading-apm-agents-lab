@@ -10,6 +10,10 @@ do
     sleep 1
 done
 
+# install java
+curl -s "https://get.sdkman.io" | bash
+sdk install java 17.0.6-tem
+
 # install the New Relic CLI
 sudo wget https://github.com/newrelic/newrelic-cli/releases/download/v0.64.2/newrelic-cli_0.64.2_Linux_x86_64.deb
 sudo dpkg -i ./newrelic-cli_0.64.2_Linux_x86_64.deb 
